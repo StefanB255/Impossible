@@ -1,0 +1,265 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 900
+}
+body{
+    overflow-x: hidden;
+    background-color: #111111;
+    color: #fff;
+}
+.wrapp{
+    width: 80%;
+    margin: 0 auto;
+}
+.main{
+    background-color: rgba(0, 0, 0, 0.52);
+    z-index: 100;
+    height: max-content;
+    position: relative;
+    
+}
+path{
+    stroke: rgb(230 230 230);
+}
+svg{
+    height: 25px;
+    width: 28px;
+    fill: none;
+    pointer-events: none;
+}
+.navbar{
+    justify-content: space-between;
+    position: relative;
+    padding: 15px 0px;
+    align-items: baseline;
+}
+.nav-link{
+    color: #fff;
+    cursor: pointer;
+}
+.logo{
+    position: absolute;
+    transform: translateX(50%);
+    left: 50%;
+}
+.titles{
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 40px;
+}
+.small-title{
+    text-align: center;
+}
+.title-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+.title-one h1{
+    font-size: 70px;
+}
+.title-date{
+    display: flex;
+    align-items: center;
+}
+.title-date p{
+    margin-bottom: 0;
+    font-weight: 900;
+}
+.second{
+    width: fit-content;
+    margin-left: auto;
+}
+.title-date hr{
+    width: 15px;
+    height: 1px;
+    background-color: #fff;
+    opacity: 1;
+    margin: 0 3px;
+}
+.under-background{
+    position: absolute;
+    top: 85%;
+    overflow: hidden;
+    left: 500px;
+    transform: matrix(1, 0, 0.3, 1, 0, 0);
+    pointer-events: none;
+}
+.under-background h1{
+    font-size: 350px;
+    width: max-content;
+    pointer-events: none;
+}
+.title-impossible h1{
+    font-size: 100px;
+    text-transform: uppercase;
+}
+.team{
+    display: flex;
+    padding: 60px 0;
+}
+.team .title{
+    width: 30%;
+}
+.team .description{
+    width: 70%;
+}
+.team .small-desc p{
+    column-count: 2;
+    font-size: 11px;
+}
+.user .user-img{
+    width: 90%
+}
+.user .user-img img{
+    width: 100%;
+}
+.description .small-desc{
+    display: flex;
+    column-count: 2;
+}
+.user-desc{
+    padding: 15px 0;
+}
+.work-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 60px 0;
+}
+.work-link .link-title{
+    font-size: 25px;
+    min-height: 75px;
+}
+.work-link{
+    color: #fff;
+    text-decoration: none;
+    padding: 17px 22px;
+    border: 1px solid #313030;
+    
+}
+.work-links a:hover{
+    color: #fff;
+    
+}
+.work-links:hover .pointer{
+    opacity: 1;
+}
+.p-20{
+    display: flex;
+    font-size: 12px;
+    pointer-events: none;
+    color: #4b4949;
+    font-weight: 600;
+}
+.clien-name:before{
+    content: "";
+    position: relative;
+    display: inline-block;
+    height: 4px;
+    width: 4px;
+    transform: translateX(3px) translateY(-3px) rotate(45deg);
+    margin-right: 7px;
+    border: 1px solid rgb(119, 119, 119);
+}
+.pointer{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.79);
+    pointer-events: none;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    opacity: 0;
+}
+.under-background-2{
+    position: absolute;
+    bottom: -450%;
+    overflow: hidden;
+    left: 1000px;
+    transform: matrix(1, 0, 0.3, 1, 0, 0);
+    pointer-events: none;
+}
+.under-background-2 h1{
+    font-size: 350px;
+    width: max-content;
+    pointer-events: none;
+}
+.under-background-3{
+    position: absolute;
+    bottom: -530%;
+    overflow: hidden;
+    left: 1000px;
+    transform: matrix(1, 0, 0.3, 1, 0, 0);
+    pointer-events: none;
+}
+.under-background-3 h1{
+    font-size: 350px;
+    width: max-content;
+    pointer-events: none;
+}
+footer{
+    display: flex;
+    padding: 30px 0;
+}
+footer:hover .pointer{
+    opacity: 1;
+}
+footer p{
+    margin-bottom: 0;
+}
+.contact{
+    display: grid;
+    border: 1px solid #313030;
+    border-bottom: none;
+    width: 50%;
+    height: fit-content;
+}
+.link-box{
+    padding: 10px;
+    border-bottom: 1px solid #313030;
+}
+.link-box{
+    color: #e5e5e5;
+    text-decoration: none;
+}
+.link-box:hover{
+    color: #e5e5e5;
+}
+footer .link-title{
+    color: #7b7b7b;
+    font-size: 10px;
+    
+}
+.social-divs{
+    display: flex;
+}
+.social-div{
+    margin-right: 20px;
+}
+.location{
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #313030;
+    border-left: none;
+    display: grid;
+    height: fit-content;
+}
+.location h4{
+    font-weight: 400;
+    font-size: 18px;
+}
+.link-desc{
+    margin-top: 15px;
+}
+.location-box{
+ padding-bottom: 30px;
+}
